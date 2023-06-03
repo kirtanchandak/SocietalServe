@@ -1,10 +1,10 @@
 import "./App.css";
-import env from "react-dotenv";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
     <div className="App">
-      <h1>{env.APPWRITE_ENDPOINT}</h1>
+      <Navbar />
     </div>
   );
 }
