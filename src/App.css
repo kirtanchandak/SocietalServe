@@ -1,9 +1,34 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
 body {
     font-family: 'Poppins', sans-serif;
 }
+.volunteer-btn{
+    border-radius: 8px;
+    cursor: pointer;
+    color: #fff;
+    fill: #fff;
+    padding: 8px 16px;
+    background-color: #00798a;
+    border-color: #00798a;
+}
 
+.blob-1{
+    left: 2%;
+    top: 15%;
+}
+.blob-2{
+    max-width: 75%;
+    left: 50%;
+    top: 5%;
+    transform: translateX(-50%);
+}
+.blob-3{
+    top: 0;
+    right: 0;
+    left: unset;
+    transform: unset;
+}
 .login {
     @apply text-[15px] md:text-lg font-[500]
 }
