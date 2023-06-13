@@ -46,7 +46,7 @@ function Hero() {
             <div class="flex flex-col items-center space-y-2 px-6">
               <div class="mt-3 md:mt-0 i9prqz1">
                 <img
-                  src="https://secure.meetupstatic.com/next/images/shared/handsUp.svg?w=384"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7trGvQHKWT_il0yvSQtSeBPQKW09fHsIooe_JwR0ubQ&s"
                   alt="img"
                   width="160"
                   height="151"
@@ -69,7 +69,7 @@ function Hero() {
             <div class="flex flex-col items-center space-y-2 px-6">
               <div class="mt-3 md:mt-0 i9prqz1">
                 <img
-                  src="https://secure.meetupstatic.com/next/images/shared/handsUp.svg?w=384"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHNXJbl-KTbXkKDKeKXBuMwSFZxjp619zezZSeSYBCug&s"
                   alt="img"
                   width="160"
                   height="151"
@@ -90,7 +90,7 @@ function Hero() {
             <div class="flex flex-col items-center space-y-2 px-6">
               <div class="mt-3 md:mt-0 i9prqz1">
                 <img
-                  src="https://secure.meetupstatic.com/next/images/shared/handsUp.svg?w=384"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIVfD3X4D6cN5cGiHEAX3bj2rqcIq3UjucLdCw9UoLpA&s"
                   alt="img"
                   width="160"
                   height="151"
