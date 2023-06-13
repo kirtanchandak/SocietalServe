@@ -74,7 +74,7 @@ function Events() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
             {data.map((item) => (
-              <a href={`/event/${item.title}`}>
+              <Link to={`/event/${item.title}`}>
                 <div class="flex flex-col items-center space-y-2 px-6 shadow-md">
                   <div class="mt-3 md:mt-0 i9prqz1">
                     <img
@@ -98,7 +98,7 @@ function Events() {
                     </p>
                   </div>
                 </div>
-              </a>
+              </Link>
             ))}
           </div>
         </>
