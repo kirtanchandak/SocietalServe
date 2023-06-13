@@ -10,10 +10,14 @@ function Navbar() {
       </div>
       <div className="flex text-xl gap-4 login">
         <button className="hidden md:block ">Register your NGO</button>
-        <button className="hover:text-[#576CBC]">login</button>
-        <button className="bg-[#576CBC] btn rounded-xl text-white">
-          signup
-        </button>
+        <a href="/login">
+          <button className="hover:text-[#576CBC] btn">login</button>
+        </a>
+        <a href="/signup">
+          <button className="bg-[#576CBC] btn rounded-xl text-white">
+            signup
+          </button>
+        </a>
       </div>
     </nav>
   );
