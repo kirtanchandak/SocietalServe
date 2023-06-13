@@ -3,7 +3,7 @@ window.env = {
   "APPDATA": "C:\\Users\\Dell\\AppData\\Roaming",
   "APPWRITE_ENDPOINT": "https://cloud.appwrite.io/v1",
   "APPWRITE_PROJECT_ID": "647b27f3b82b79140fdc",
-  "CHROME_CRASHPAD_PIPE_NAME": "\\\\.\\pipe\\LOCAL\\crashpad_13608_URKFSFLBKMZETXDA",
+  "CHROME_CRASHPAD_PIPE_NAME": "\\\\.\\pipe\\LOCAL\\crashpad_2456_IRPYMKLNWXYTJOKH",
   "COLOR": "1",
   "COLORTERM": "truecolor",
   "CommonProgramFiles": "C:\\Program Files\\Common Files",
@@ -13,7 +13,7 @@ window.env = {
   "ComSpec": "C:\\WINDOWS\\system32\\cmd.exe",
   "DriverData": "C:\\Windows\\System32\\Drivers\\DriverData",
   "EDITOR": "C:\\WINDOWS\\notepad.exe",
-  "EFC_20860": "1",
+  "EFC_17096": "1",
   "FPS_BROWSER_APP_PROFILE_STRING": "Internet Explorer",
   "FPS_BROWSER_USER_PROFILE_STRING": "Default",
   "GIT_ASKPASS": "c:\\Users\\Dell\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass.sh",
@@ -56,7 +56,7 @@ window.env = {
   "OneDrive": "C:\\Users\\Dell\\OneDrive",
   "ORIGINAL_XDG_CURRENT_DESKTOP": "undefined",
   "OS": "Windows_NT",
-  "Path": "C:\\Users\\Dell\\Desktop\\societalserve\\node_modules\\.bin;C:\\Users\\Dell\\Desktop\\node_modules\\.bin;C:\\Users\\Dell\\node_modules\\.bin;C:\\Users\\node_modules\\.bin;C:\\node_modules\\.bin;C:\\Users\\Dell\\AppData\\Roaming\\npm\\node_modules\\npm\\node_modules\\@npmcli\\run-script\\lib\\node-gyp-bin;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\redist\\intel64\\compiler;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\dotnet\\;C:\\MinGw\\mingw32\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files\\MongoDB\\Server\\5.0\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\Users\\Dell\\scoop\\shims;C:\\Users\\Dell\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\;C:\\Users\\Dell\\AppData\\Local\\Programs\\Python\\Python310\\;C:\\Users\\Dell\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Dell\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Program Files\\nodejs\\node_modules\\npm\\bin;C:\\Exercism;C:\\Users\\Dell\\AppData\\Roaming\\npm;C:\\Program Files\\heroku\\bin;C:\\Users\\Dell\\AppData\\Local\\GitHubDesktop\\bin;C:\\Program Files\\JetBrains\\PyCharm Community Edition 2022.1.3\\bin;;C:\\Program Files\\Java\\jdk-18.0.1.1\\bin;C:\\Program Files\\JetBrains\\IntelliJ IDEA Community Edition 2022.1.3\\bin;;C:\\Users\\Dell\\AppData\\Local\\Programs\\Python\\Python310\\Scripts;C:\\Users\\Dell\\AppData\\Local\\Programs\\Python\\Python310;C:\\Users\\Dell\\AppData\\Local\\Pandoc\\",
+  "Path": "C:\\Users\\Dell\\Desktop\\societalserve\\node_modules\\.bin;C:\\Users\\Dell\\Desktop\\node_modules\\.bin;C:\\Users\\Dell\\node_modules\\.bin;C:\\Users\\node_modules\\.bin;C:\\node_modules\\.bin;C:\\Users\\Dell\\AppData\\Roaming\\npm\\node_modules\\npm\\node_modules\\@npmcli\\run-script\\lib\\node-gyp-bin;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\redist\\intel64\\compiler;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\dotnet\\;C:\\MinGw\\mingw32\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files\\MongoDB\\Server\\5.0\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\Users\\Dell\\scoop\\shims;C:\\Users\\Dell\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\;C:\\Users\\Dell\\AppData\\Local\\Programs\\Python\\Python310\\;C:\\Users\\Dell\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Dell\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Program Files\\nodejs\\node_modules\\npm\\bin;C:\\Exercism;C:\\Users\\Dell\\AppData\\Roaming\\npm;C:\\Program Files\\heroku\\bin;C:\\Users\\Dell\\AppData\\Local\\GitHubDesktop\\bin;C:\\Program Files\\JetBrains\\PyCharm Community Edition 2022.1.3\\bin;C:\\Program Files\\Java\\jdk-18.0.1.1\\bin;C:\\Program Files\\JetBrains\\IntelliJ IDEA Community Edition 2022.1.3\\bin;C:\\Users\\Dell\\AppData\\Local\\Programs\\Python\\Python310\\Scripts;C:\\Users\\Dell\\AppData\\Local\\Programs\\Python\\Python310;C:\\Users\\Dell\\AppData\\Local\\Pandoc\\",
   "PATHEXT": ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL",
   "PROCESSOR_ARCHITECTURE": "AMD64",
   "PROCESSOR_IDENTIFIER": "AMD64 Family 25 Model 80 Stepping 0, AuthenticAMD",
@@ -87,5 +87,8 @@ window.env = {
   "VSCODE_GIT_IPC_HANDLE": "\\\\.\\pipe\\vscode-git-f5c0c901c1-sock",
   "VSCODE_INJECTION": "1",
   "VueJS": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
-  "windir": "C:\\WINDOWS"
+  "windir": "C:\\WINDOWS",
+  "WSLENV": "WT_SESSION::WT_PROFILE_ID",
+  "WT_PROFILE_ID": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+  "WT_SESSION": "6d82e7a8-5761-4863-824a-ace2da62d1ad"
 };
