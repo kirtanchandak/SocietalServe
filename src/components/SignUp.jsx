@@ -1,26 +1,32 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { ID } from "appwrite";
 import { account } from "../utils/appwrite";
 
 function Login() {
   const navigate = useNavigate();
+
   const [user, setUser] = useState({
     email: "",
     password: "",
   });
-  const loginUser = async (e) => {
-    e.preventDefault();
-    try {
-      await account.createEmailSession(user.email, user.password);
-      navigate("/events"); //Success
-    } catch (err) {
-      console.log(err);
-    }
-  };
 
+  const signUpUser = async (e) => {
+    e.preventDefault();
+    const promise = account.create(ID.unique(), user.email, user.password);
+    promise.then(
+      function (response) {
+        console.log(response);
+        navigate("/events"); //Success
+      },
+      function (error) {
+        console.log(error); //Failure
+      }
+    );
+  };
   return (
     <div className="text-center p-20">
-      <h1 className="text-3xl font-[700]">Login</h1>
+      <h1 className="text-3xl font-[700]">SignUp</h1>
       <div>
         <h1>Email:</h1>
         <input
@@ -45,8 +51,8 @@ function Login() {
           }
         />
       </div>
-      <button className="mt-4 bg-red-300" onClick={loginUser}>
-        Login
+      <button className="mt-4 bg-red-300" onClick={signUpUser}>
+        Create Account
       </button>
     </div>
   );
