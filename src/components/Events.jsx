@@ -32,25 +32,25 @@ function Events() {
 
   const data = [
     {
-      img: "https://secure.meetupstatic.com/photos/event/4/f/1/6/event_513560246.jpeg",
+      img: "https://earth5r.org/wp-content/uploads/2020/07/Clean-Up-Drive-Gandhinagar-Mumbai-India-Environmental-NGO-Earth5R.jpg",
       title: "Garbage collection Drive",
       date: "FriDay 9th June 2023 2:15",
       des: "Come Join us for the most beaautiful organisational comittie event :)",
     },
     {
-      img: "https://secure.meetupstatic.com/photos/event/4/f/1/6/event_513560246.jpeg",
+      img: "https://www.bookeventz.com/blog/wp-content/uploads/2021/02/FI-1.jpg",
       date: "FriDay 9th June 2023 2:15",
       title: "Food Distribution Drive",
       des: "Come Join us for the most beaautiful organisational comittie event :)",
     },
     {
-      img: "https://secure.meetupstatic.com/photos/event/4/f/1/6/event_513560246.jpeg",
+      img: "https://s3.amazonaws.com/RIProjects/PRDImages/6c832125-74dd-402c-a085-6468b71537f9-2bc186dc-dd1c-429d-8b92-978a2bdc9e7d-21a97658-f16b-487b-bb54-fea7f9713e8c-65129314-0-MainPhoto",
       date: "FriDay 9th June 2023 2:15",
-      title: "Blood Donation Drive",
+      title: "Blood Donation Camp",
       des: "Come Join us for the most beaautiful organisational comittie event :)",
     },
     {
-      img: "https://secure.meetupstatic.com/photos/event/4/f/1/6/event_513560246.jpeg",
+      img: "https://ratnanidhi.org/userfile/image/Webp%20images/001F.webp",
       date: "FriDay 9th June 2023 2:15",
       title: "Clothes Distribution Drive",
       des: "Come Join us for the most beaautiful organisational comittie event :)",
@@ -82,7 +82,7 @@ function Events() {
                       src={item.img}
                       alt="img"
                       max-width="100%"
-                      height="auto"
+                      height="100%"
                       loading="lazy"
                     />
                   </div>

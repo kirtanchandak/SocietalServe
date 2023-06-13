@@ -1,4 +1,7 @@
 import React from "react";
+import search from "../../assets/search.png";
+import signup from "../../assets/signup.png";
+import attend from "../../assets/attend.png";
 
 function Hero() {
   return (
@@ -46,7 +49,7 @@ function Hero() {
             <div class="flex flex-col items-center space-y-2 px-6">
               <div class="mt-3 md:mt-0 i9prqz1">
                 <img
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7trGvQHKWT_il0yvSQtSeBPQKW09fHsIooe_JwR0ubQ&s"
+                  src={search}
                   alt="img"
                   width="160"
                   height="151"
@@ -67,9 +70,9 @@ function Hero() {
               </div>
             </div>
             <div class="flex flex-col items-center space-y-2 px-6">
-              <div class="mt-3 md:mt-0 i9prqz1">
+              <div class="mt-3 md:mt-0">
                 <img
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHNXJbl-KTbXkKDKeKXBuMwSFZxjp619zezZSeSYBCug&s"
+                  src={signup}
                   alt="img"
                   width="160"
                   height="151"
@@ -83,14 +86,16 @@ function Hero() {
                   </h3>
                 </a>
                 <p class="text-sm text-center font-normal text-gray7">
-                  Find an excting event to contribute in and register for it!
+                  Find an imapcful event to contribute and enjoy a day of
+                  hands-on conservation. Help make a difference and create a
+                  positive impact on our planet!
                 </p>
               </div>
             </div>
             <div class="flex flex-col items-center space-y-2 px-6">
               <div class="mt-3 md:mt-0 i9prqz1">
                 <img
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIVfD3X4D6cN5cGiHEAX3bj2rqcIq3UjucLdCw9UoLpA&s"
+                  src={attend}
                   alt="img"
                   width="160"
                   height="151"
@@ -102,8 +107,9 @@ function Hero() {
                   <h3 class="font-semibold text-xl mb-3">Attend the Event</h3>
                 </a>
                 <p class="text-sm text-center font-normal text-gray7">
-                  Once, registered the NGO will confirm your registration and
-                  enjoy the event!
+                  Once, registered the NGO will check the fullfillments and
+                  confirm your registration and enjoy the event! Congrats now
+                  you can attend!
                 </p>
               </div>
             </div>
@@ -123,7 +129,7 @@ function Hero() {
               <div class="mt-3 md:mt-0 i9prqz1">
                 <img
                   className="rounded-t-lg"
-                  src="https://secure.meetupstatic.com/photos/event/4/f/1/6/event_513560246.jpeg"
+                  src="https://earth5r.org/wp-content/uploads/2020/07/Clean-Up-Drive-Gandhinagar-Mumbai-India-Environmental-NGO-Earth5R.jpg"
                   alt="img"
                   max-width="100%"
                   height="auto"
