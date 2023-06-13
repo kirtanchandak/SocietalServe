@@ -3,7 +3,7 @@ import React from "react";
 function Footer() {
   return (
     <footer className="text-gray-100 bg-gray-800 pt-4 z-0 mt-0">
-      <div className="px-6 sm:px-4 xl:px-0 md:max-w-screen my-0 mx-auto flex flex-col space-y-6 pb-4">
+      <div className="px-6 sm:px-4 xl:px-0 md:max-w-screen my-0 mx-8 flex flex-col space-y-6 pb-4">
         <div className="flex flex-row  items-center justify-center sm:justify-start pb-6 mt-2 border-b border-solid border-gray6">
           <div className="hidden sm:block font-semibold">
             Post your own NGO event.
@@ -39,22 +39,6 @@ function Footer() {
                   className="ds-font-small hover:no-underline text-gray4 hover:text-white cursor-pointer"
                 >
                   Log in
-                </a>
-              </li>
-              <li className="my-1">
-                <a
-                  href="https://www.societalserve.vercel.app/en-US/help/"
-                  className="ds-font-small hover:no-underline text-gray4 hover:text-white cursor-pointer"
-                >
-                  Help
-                </a>
-              </li>
-              <li className="my-1">
-                <a
-                  href="https://www.societalserve.vercel.app/lp/affiliate-program/"
-                  className="ds-font-small hover:no-underline text-gray4 hover:text-white cursor-pointer"
-                >
-                  Become an Donor
                 </a>
               </li>
             </ul>
