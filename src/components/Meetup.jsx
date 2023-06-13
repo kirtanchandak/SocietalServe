@@ -2,8 +2,8 @@ import React from "react";
 
 function Meetup() {
   return (
-    <div>
-      <div className="text-center py-4 sm:py-8">
+    <div className="py-20">
+      <div className="text-center py-4 sm:py-8 ">
         <h1 className="text-3xl font-[700]">How SocietalServe Works?</h1>
         <p class="text-center w-full sm:w-1/3 lg:w-1/2 mb-10 mx-auto">
           Meet new people who share your interests through online and in-person

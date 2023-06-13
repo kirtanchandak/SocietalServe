@@ -2,6 +2,8 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Meetup from "./components/Meetup";
+import Upcoming from "./components/Upcoming";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -9,6 +11,8 @@ function App() {
       <Navbar />
       <Hero />
       <Meetup />
+      <Upcoming />
+      <Footer />
     </div>
   );
 }
