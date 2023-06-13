@@ -44,7 +44,7 @@ function Events() {
       des: "Come Join us for the most beaautiful organisational comittie event :)",
     },
     {
-      img: "https://s3.amazonaws.com/RIProjects/PRDImages/6c832125-74dd-402c-a085-6468b71537f9-2bc186dc-dd1c-429d-8b92-978a2bdc9e7d-21a97658-f16b-487b-bb54-fea7f9713e8c-65129314-0-MainPhoto",
+      img: "https://static.toiimg.com/thumb/msid-68667160,width-400,resizemode-4/68667160.jpg",
       date: "FriDay 9th June 2023 2:15",
       title: "Blood Donation Camp",
       des: "Come Join us for the most beaautiful organisational comittie event :)",
@@ -96,6 +96,9 @@ function Events() {
                     <p className="text-gray7 font-medium text-base pt-0 pb-1 line-clamp-3 xs:h-auto">
                       {item.des}
                     </p>
+                    <button className="bg-[#576CBC] rounded-lg btn mt-2 text-white">
+                      Join Now
+                    </button>
                   </div>
                 </div>
               </Link>
