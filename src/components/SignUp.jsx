@@ -11,6 +11,14 @@ function Login() {
     password: "",
   });
 
+  const googleAuth = (e) => {
+    e.preventDefault();
+    account.createOAuth2Session(
+      "google",
+      "https://societal-serve.vercel.app/events"
+    );
+  };
+
   const signUpUser = async (e) => {
     e.preventDefault();
     const promise = account.create(ID.unique(), user.email, user.password);
@@ -54,6 +62,12 @@ function Login() {
       <button className="mt-4 bg-red-300" onClick={signUpUser}>
         Create Account
       </button>
+      <h2
+        className="text-lg font-medium text-gray-600 pt-3"
+        onClick={(e) => googleAuth(e)}
+      >
+        Sign In with Google
+      </h2>
     </div>
   );
 }
