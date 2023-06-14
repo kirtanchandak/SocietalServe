@@ -1,4 +1,6 @@
 import React from "react";
+import { data } from "../../utils/data";
+import { Link } from "react-router-dom";
 import search from "../../assets/search.png";
 import signup from "../../assets/signup.png";
 import attend from "../../assets/attend.png";
@@ -125,98 +127,31 @@ function Hero() {
         </div>
         <div className="">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
-            <div class="flex flex-col items-center space-y-2 px-6 shadow-md">
-              <div class="mt-3 md:mt-0 i9prqz1">
-                <img
-                  className="rounded-t-lg"
-                  src="https://earth5r.org/wp-content/uploads/2020/07/Clean-Up-Drive-Gandhinagar-Mumbai-India-Environmental-NGO-Earth5R.jpg"
-                  alt="img"
-                  max-width="100%"
-                  height="auto"
-                  loading="lazy"
-                />
-              </div>
-              <div className="flex flex-col justify-between w-full h-full p-3">
-                <div className="flex justify-between md:items-center flex-col-reverse md:flex-row">
-                  <div className="flex flex-col uppercase text-sm leading-5 tracking-tight text-darkGold font-medium pb-1 pt-1 line-clamp-1 lg:line-clamp-2">
-                    FriDay 9th June 2023 2:15
+            {data.map((item) => (
+              <Link to="/login">
+                <div class="flex flex-col items-center space-y-2 px-6 shadow-md">
+                  <div class="mt-3 md:mt-0">
+                    <img className="rounded-lg" src={item.img} width="300px" />
+                  </div>
+                  <div className="flex flex-col justify-between w-full h-full p-3">
+                    <div className="text-xl font-[700]">{item.title}</div>
+                    <div className="flex justify-between md:items-center flex-col-reverse md:flex-row">
+                      <div className="flex flex-col uppercase text-sm leading-5 tracking-tight text-darkGold font-medium pb-1 pt-1 line-clamp-1 lg:line-clamp-2">
+                        FriDay 9th June 2023 2:15
+                      </div>
+                    </div>
+                    <p className="text-gray7 font-medium text-base pt-0 pb-1 line-clamp-3 xs:h-auto">
+                      {item.des}
+                    </p>
+                    <Link to={`/event/${item.id}`}>
+                      <button className="bg-[#576CBC] rounded-lg btn mt-2 text-white">
+                        Join Now
+                      </button>
+                    </Link>
                   </div>
                 </div>
-                <p className="text-gray7 font-medium text-base pt-0 pb-1 line-clamp-3 xs:h-auto">
-                  Come Join us for the most beaautiful organisational comittie
-                  event :)
-                </p>
-              </div>
-            </div>
-            <div class="flex flex-col items-center space-y-2 px-6">
-              <div class="mt-3 md:mt-0 i9prqz1">
-                <img
-                  className="rounded-t-lg"
-                  src="https://secure.meetupstatic.com/photos/event/3/b/0/6/event_512355110.jpeg"
-                  alt="img"
-                  max-width="100%"
-                  height="auto"
-                  loading="lazy"
-                />
-              </div>
-              <div className="flex flex-col justify-between w-full h-full p-3">
-                <div className="flex justify-between md:items-center flex-col-reverse md:flex-row">
-                  <div className="flex flex-col uppercase text-sm leading-5 tracking-tight text-darkGold font-medium pb-1 pt-1 line-clamp-1 lg:line-clamp-2">
-                    FriDay 9th June 2023 2:15
-                  </div>
-                </div>
-                <p className="text-gray7 font-medium text-base pt-0 pb-1 line-clamp-3 xs:h-auto">
-                  Come Join us for the most beaautiful organisational comittie
-                  event :)
-                </p>
-              </div>
-            </div>
-            <div class="flex flex-col items-center space-y-2 px-6">
-              <div class="mt-3 md:mt-0 i9prqz1">
-                <img
-                  className="rounded-t-lg"
-                  src="https://secure.meetupstatic.com/photos/event/2/8/8/b/event_513310379.jpeg"
-                  alt="img"
-                  max-width="100%"
-                  height="auto"
-                  loading="lazy"
-                />
-              </div>
-              <div className="flex flex-col justify-between w-full h-full p-3">
-                <div className="flex justify-between md:items-center flex-col-reverse md:flex-row">
-                  <div className="flex flex-col uppercase text-sm leading-5 tracking-tight text-darkGold font-medium pb-1 pt-1 line-clamp-1 lg:line-clamp-2">
-                    FriDay 9th June 2023 2:15
-                  </div>
-                </div>
-                <p className="text-gray7 font-medium text-base pt-0 pb-1 line-clamp-3 xs:h-auto">
-                  Come Join us for the most beaautiful organisational comittie
-                  event :)
-                </p>
-              </div>
-            </div>
-            <div class="flex flex-col items-center space-y-2 px-6">
-              <div class="mt-3 md:mt-0 i9prqz1">
-                <img
-                  className="rounded-t-lg"
-                  src="https://secure.meetupstatic.com/photos/event/9/8/2/6/event_513578950.jpeg"
-                  alt="img"
-                  max-width="100%"
-                  height="auto"
-                  loading="lazy"
-                />
-              </div>
-              <div className="flex flex-col justify-between w-full h-full p-3">
-                <div className="flex justify-between md:items-center flex-col-reverse md:flex-row">
-                  <div className="flex flex-col uppercase text-sm leading-5 tracking-tight text-darkGold font-medium pb-1 pt-1 line-clamp-1 lg:line-clamp-2">
-                    FriDay 9th June 2023 2:15
-                  </div>
-                </div>
-                <p className="text-gray7 font-medium text-base pt-0 pb-1 line-clamp-3 xs:h-auto">
-                  Come Join us for the most beaautiful organisational comittie
-                  event :)
-                </p>
-              </div>
-            </div>
+              </Link>
+            ))}
           </div>
         </div>
       </div>

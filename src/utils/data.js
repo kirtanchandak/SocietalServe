@@ -15,10 +15,10 @@ export const data = [
   },
   {
     id: 3,
-    img: "https://static.toiimg.com/thumb/msid-68667160,width-400,resizemode-4/68667160.jpg",
+    img: "https://pahal.ngo/wp-content/uploads/2017/08/6.jpg",
     date: "FriDay 9th June 2023 2:15",
     title: "Blood Donation Camp",
-    des: "Come Join us for the most beaautiful organisational comittie event :)",
+    des: "Come Join us for the most beaautiful organisational comittie event an okay ",
   },
   {
     id: 4,

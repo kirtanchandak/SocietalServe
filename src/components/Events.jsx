@@ -65,29 +65,27 @@ function Events() {
             {data.map((item) => (
               <Link to={`/event/${item.id}`}>
                 <div class="flex flex-col items-center space-y-2 px-6 shadow-md">
-                  <div class="mt-3 md:mt-0 i9prqz1">
+                  <div class="mt-3 md:mt-0">
                     <img
-                      className="rounded-t-lg"
+                      class="rounded-t-lg"
                       src={item.img}
-                      alt="img"
-                      max-width="100%"
+                      width="100%"
                       height="100%"
-                      loading="lazy"
                     />
                   </div>
-                  <div className="flex flex-col justify-between w-full h-full p-3">
-                    <div className="text-xl font-[700]">{item.title}</div>
-                    <div className="flex justify-between md:items-center flex-col-reverse md:flex-row">
-                      <div className="flex flex-col uppercase text-sm leading-5 tracking-tight text-darkGold font-medium pb-1 pt-1 line-clamp-1 lg:line-clamp-2">
+                  <div class="flex flex-col justify-between w-full h-full p-3">
+                    <div class="text-xl font-semibold">{item.title}</div>
+                    <div class="flex justify-between items-center">
+                      <div class="uppercase text-sm leading-5 tracking-tight text-darkGold font-medium pb-1 pt-1 line-clamp-1 lg:line-clamp-2">
                         FriDay 9th June 2023 2:15
                       </div>
                     </div>
-                    <p className="text-gray7 font-medium text-base pt-0 pb-1 line-clamp-3 xs:h-auto">
+                    <p class="text-gray-700 font-medium text-base pt-0 pb-1 line-clamp-3">
                       {item.des}
                     </p>
                     <Link to={`/event/${item.id}`}>
                       <button
-                        className="bg-[#576CBC] rounded-lg btn mt-2 text-white"
+                        class="bg-[#576CBC] rounded-lg btn mt-2 text-white"
                         onClick={handleSendEmail}
                       >
                         Join Now

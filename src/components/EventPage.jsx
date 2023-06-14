@@ -40,8 +40,8 @@ const EventPage = () => {
           src={img}
           className="rounded-md mt-4"
           alt=""
-          srcset=""
-          width="500px"
+          height="100%"
+          width="100%"
         />
         <button className="bg-[#576CBC] btn rounded-md text-white mt-3">
           Join Now
