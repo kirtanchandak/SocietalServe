@@ -85,12 +85,14 @@ function Events() {
                     <p className="text-gray7 font-medium text-base pt-0 pb-1 line-clamp-3 xs:h-auto">
                       {item.des}
                     </p>
-                    <button
-                      className="bg-[#576CBC] rounded-lg btn mt-2 text-white"
-                      onClick={handleSendEmail}
-                    >
-                      Join Now
-                    </button>
+                    <Link to={`/event/${item.id}`}>
+                      <button
+                        className="bg-[#576CBC] rounded-lg btn mt-2 text-white"
+                        onClick={handleSendEmail}
+                      >
+                        Join Now
+                      </button>
+                    </Link>
                   </div>
                 </div>
               </Link>

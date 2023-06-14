@@ -36,7 +36,13 @@ const EventPage = () => {
           <p className="font-[500]">{des}</p>
           <p>On: {date}</p>
         </div>
-        <img src={img} className="rounded-md mt-4" alt="" srcset="" />
+        <img
+          src={img}
+          className="rounded-md mt-4"
+          alt=""
+          srcset=""
+          width="500px"
+        />
         <button className="bg-[#576CBC] btn rounded-md text-white mt-3">
           Join Now
         </button>
