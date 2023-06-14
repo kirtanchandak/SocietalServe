@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { account } from "../utils/appwrite";
+import sendEmail from "../utils/sendmail";
 import Login from "./Login";
 import { Link } from "react-router-dom";
 
@@ -28,6 +29,20 @@ function Events() {
     } catch (err) {
       console.log(err);
     }
+  };
+
+  const handleSendEmail = () => {
+    account
+      .get()
+      .then((response) => {
+        const receiverEmail = response.email;
+
+        sendEmail(receiverEmail);
+        console.log("User email:", receiverEmail);
+      })
+      .catch((error) => {
+        console.error("Error retrieving user data:", error);
+      });
   };
 
   const data = [
@@ -96,7 +111,10 @@ function Events() {
                     <p className="text-gray7 font-medium text-base pt-0 pb-1 line-clamp-3 xs:h-auto">
                       {item.des}
                     </p>
-                    <button className="bg-[#576CBC] rounded-lg btn mt-2 text-white">
+                    <button
+                      className="bg-[#576CBC] rounded-lg btn mt-2 text-white"
+                      onClick={handleSendEmail}
+                    >
                       Join Now
                     </button>
                   </div>
