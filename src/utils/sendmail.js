@@ -8,6 +8,7 @@ const sendEmail = (receiverEmail) => {
   // Set up the email configuration
   const emailParams = {
     to_email: receiverEmail,
+    receiver_email: receiverEmail,
   };
 
   // Send the email

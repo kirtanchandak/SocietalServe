@@ -5,7 +5,7 @@ window.env = {
   "APPWRITE_PROJECT_ID": "647b27f3b82b79140fdc",
   "ChocolateyInstall": "C:\\ProgramData\\chocolatey",
   "ChocolateyLastPathUpdate": "133252676809941196",
-  "CHROME_CRASHPAD_PIPE_NAME": "\\\\.\\pipe\\LOCAL\\crashpad_3852_QHOABMEYWEEZDSEE",
+  "CHROME_CRASHPAD_PIPE_NAME": "\\\\.\\pipe\\LOCAL\\crashpad_14720_UCRNGVPRPUAWHPFX",
   "COLOR": "1",
   "COLORTERM": "truecolor",
   "CommonProgramFiles": "C:\\Program Files\\Common Files",
@@ -65,7 +65,7 @@ window.env = {
   "ProgramFiles(x86)": "C:\\Program Files (x86)",
   "ProgramW6432": "C:\\Program Files",
   "PROMPT": "$P$G",
-  "PSModulePath": "C:\\Users\\sarva\\OneDrive\\Documents\\PowerShell\\Modules;C:\\Program Files\\PowerShell\\Modules;c:\\program files\\windowsapps\\microsoft.powershell_7.3.4.0_x64__8wekyb3d8bbwe\\Modules;C:\\Users\\sarva\\OneDrive\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules;C:\\Program Files (x86)\\Microsoft SQL Server\\150\\Tools\\PowerShell\\Modules\\",
+  "PSModulePath": "C:\\Users\\sarva\\OneDrive\\Documents\\PowerShell\\Modules;C:\\Program Files\\PowerShell\\Modules;c:\\program files\\windowsapps\\microsoft.powershell_7.3.4.0_x64__8wekyb3d8bbwe\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules;C:\\Program Files (x86)\\Microsoft SQL Server\\150\\Tools\\PowerShell\\Modules\\",
   "PUBLIC": "C:\\Users\\Public",
   "PyCharm": "C:\\Program Files\\JetBrains\\PyCharm 2022.2.3\\bin;",
   "PyCharm Community Edition": "C:\\Program Files\\JetBrains\\PyCharm Community Edition 2021.1.3\\bin;",
@@ -87,8 +87,5 @@ window.env = {
   "VSCODE_GIT_IPC_HANDLE": "\\\\.\\pipe\\vscode-git-5f7c53a1a6-sock",
   "VSCODE_INJECTION": "1",
   "windir": "C:\\WINDOWS",
-  "WSLENV": "WT_SESSION::WT_PROFILE_ID",
-  "WT_PROFILE_ID": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
-  "WT_SESSION": "b504bd82-08e8-48ff-93da-7d1153556d9b",
   "ZES_ENABLE_SYSMAN": "1"
 };
