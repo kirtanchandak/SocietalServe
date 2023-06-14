@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import "../App.css";
 
 const EventPage = () => {
   const [img, setImg] = useState("");
@@ -50,12 +51,26 @@ const EventPage = () => {
     }
   }, []);
   return (
-    <div>
-      <h1>{title}</h1>
-      <h1>{des}</h1>
-      <h1>{date}</h1>
-      <img src={img} alt="" srcset="" />
-    </div>
+    <>
+      <div className="p-10 h-screen back">
+        <h1 className="text-3xl md:text-5xl font-[700]">{title}</h1>
+        <div className="flex gap-1 pt-4">
+          <img
+            src="https://secure.meetupstatic.com/next/images/design-system-icons/menu-network-event-outline.svg?w=48"
+            alt=""
+          />
+          <h1>Pragati NGO, Pune</h1>
+        </div>
+        <div className="pt-4">
+          <p className="font-[500]">{des}</p>
+          <p>On: {date}</p>
+        </div>
+        <img src={img} className="rounded-md mt-4" alt="" srcset="" />
+        <button className="bg-[#576CBC] btn rounded-md text-white mt-3">
+          Join Now
+        </button>
+      </div>
+    </>
   );
 };
 
