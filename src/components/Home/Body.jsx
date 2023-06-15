@@ -23,7 +23,7 @@ function Hero() {
           <div>
             <a
               className="bg-[#576CBC]  inline-block  hover:no-underline btn rounded-md mt-4 text-white font-medium"
-              href="/"
+              href="#upcoming"
             >
               Join Meetup
             </a>
@@ -114,7 +114,7 @@ function Hero() {
           </div>
         </div>
       </div>
-      <div className="py-10 px-6">
+      <div className="py-10 px-6" id="upcoming">
         <div className=" flex justify-between items-center py-10">
           <h2 className="font-semibold md:font-bold md:text-3xl text-xl">
             Upcoming Events
