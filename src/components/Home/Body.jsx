@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import search from "../../assets/search.png";
 import signup from "../../assets/signup.png";
 import attend from "../../assets/attend.png";
+import Login from "../Login";
 
 function Hero() {
   return (
@@ -143,11 +144,9 @@ function Hero() {
                     <p className="text-gray7 font-medium text-base pt-0 pb-1 line-clamp-3 xs:h-auto">
                       {item.des}
                     </p>
-                    <Link to={`/event/${item.id}`}>
-                      <button className="bg-[#576CBC] rounded-lg btn mt-2 text-white">
-                        Join Now
-                      </button>
-                    </Link>
+                    <button className="bg-[#576CBC] rounded-lg btn mt-2 text-white">
+                      Join Now
+                    </button>
                   </div>
                 </div>
               </Link>

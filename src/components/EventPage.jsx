@@ -3,12 +3,16 @@ import "../App.css";
 import { data } from "../utils/data";
 import sendEmail from "../utils/sendmail";
 import { account } from "../utils/appwrite";
+import { BiTimeFive } from "react-icons/bi";
 
 const EventPage = () => {
   const [img, setImg] = useState("");
   const [title, setTitle] = useState("");
   const [des, setDes] = useState("");
   const [date, setDate] = useState("");
+  const [ngo, setNgo] = useState("");
+  const [ngoLogo, setNgoLogo] = useState("");
+  const [detailedDes, setDetailedDes] = useState("");
 
   useEffect(() => {
     var url = window.location.href;
@@ -21,6 +25,9 @@ const EventPage = () => {
       setDes(item.des);
       setImg(item.img);
       setTitle(item.title);
+      setNgo(item.ngo);
+      setNgoLogo(item.ngologo);
+      setDetailedDes(item.detailedDes);
     }
   }, []);
 
@@ -40,32 +47,46 @@ const EventPage = () => {
 
   return (
     <>
-      <div className="p-10 h-screen back">
-        <h1 className="text-3xl md:text-5xl font-[700]">{title}</h1>
-        <div className="flex gap-1 pt-4">
-          <img
-            src="https://secure.meetupstatic.com/next/images/design-system-icons/menu-network-event-outline.svg?w=48"
-            alt=""
-          />
-          <h1>Pragati NGO, Pune</h1>
+      <div className="w-full border-b py-2 lg:py-6">
+        <h1 className="text-4xl font-[700] ml-8">{title}</h1>
+        <div className="flex flex-row mt-4">
+          <div>
+            <img src={ngoLogo} className="w-10 ml-6 mt-2" alt="" />
+          </div>
+          <div className="ml-4">
+            <h1>Hosted by:</h1>
+            <span className="font-medium">{ngo}</span>
+          </div>
         </div>
-        <div className="pt-4">
-          <p className="font-[500]">{des}</p>
-          <p>On: {date}</p>
+      </div>
+      <div className="container mx-auto px-4 py-8">
+        <div className="flex flex-col md:flex-row">
+          <div className="md:w-3/4">
+            <img src={img} alt={title} className="mb-4 rounded-md w-full" />
+          </div>
+          <div className="md:w-3/4 md:pl-8">
+            <h2 className="lg:text-5xl font-[700] hidden">{title}</h2>
+            <div className="text-sm w-72">
+              <div className="px-2 py-3 sm:pb-4.5 lg:py-5 bg-white lg:rounded-t-2xl lg:rounded-b-2xl border-b">
+                <div>
+                  <div className="flex">
+                    <div>
+                      <BiTimeFive size="20px" className="mt-2" />
+                    </div>
+                    <div className="pl-4 md:pl-4.5 lg-pl-5 mt-2">{date}</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="pt-3">
+              <h1 className="text-xl font-semibold">Details:</h1>
+              <p className="text-gray-600 mt-3 font-medium">{detailedDes}</p>
+            </div>
+            <button className="bg-blue-500 hover:bg-blue-600 text-white font-semibold px-4 py-1 rounded mt-3">
+              RSVP
+            </button>
+          </div>
         </div>
-        <img
-          src={img}
-          className="rounded-md mt-4"
-          alt="event img"
-          height="100%"
-          width="100%"
-        />
-        <button
-          className="bg-[#576CBC] btn rounded-md text-white mt-3"
-          onClick={handleSendEmail}
-        >
-          Join Now
-        </button>
       </div>
     </>
   );

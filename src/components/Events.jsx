@@ -61,6 +61,7 @@ function Events() {
                   </div>
                   <div class="flex flex-col justify-between w-full h-full p-3">
                     <div class="text-xl font-semibold">{item.title}</div>
+                    <p className="font-medium">{item.ngo}</p>
                     <div class="flex justify-between items-center">
                       <div class="uppercase text-sm leading-5 tracking-tight text-darkGold font-medium pb-1 pt-1 line-clamp-1 lg:line-clamp-2">
                         FriDay 9th June 2023 2:15
