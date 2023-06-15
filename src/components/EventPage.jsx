@@ -56,7 +56,7 @@ const EventPage = () => {
         <img
           src={img}
           className="rounded-md mt-4"
-          alt=""
+          alt="event img"
           height="100%"
           width="100%"
         />
