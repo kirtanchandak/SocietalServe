@@ -25,6 +25,19 @@ const EventPage = () => {
       setTitle(item.title);
     }
   }, []);
+  const handleSendEmail = () => {
+    account
+      .get()
+      .then((response) => {
+        const receiverEmail = response.email;
+
+        sendEmail(receiverEmail);
+        console.log("User email:", receiverEmail);
+      })
+      .catch((error) => {
+        console.error("Error retrieving user data:", error);
+      });
+  };
   return (
     <>
       <div className="p-10 h-screen back">
@@ -43,7 +56,7 @@ const EventPage = () => {
         <img
           src={img}
           className="rounded-md mt-4"
-          alt="event img"
+          alt=""
           height="100%"
           width="100%"
         />
