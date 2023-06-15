@@ -8,6 +8,7 @@ import sendEmail from "../utils/sendmail";
 const EventPage = () => {
   const [RSVPbtntxt, setRSVPbtntxt] = useState("RSVP Now");
   const [img, setImg] = useState("");
+  const [isButtonDisabled, setIsButtonDisabled] = useState(false);
   const [title, setTitle] = useState("");
   const [date, setDate] = useState("");
   const [ngo, setNgo] = useState("");
@@ -36,6 +37,7 @@ const EventPage = () => {
         const receiverEmail = response.email;
         sendEmail(receiverEmail);
         setRSVPbtntxt("You've Succesfully RSVP'ed");
+        console.log("User email:", receiverEmail);
       })
       .catch((error) => {
         console.error("Error retrieving user data:", error);
@@ -75,7 +77,7 @@ const EventPage = () => {
             </div>
             <button
               onClick={handleSendEmail}
-              className="bg-blue-500 hover:bg-blue-600 text-white font-semibold px-4 py-1 rounded mt-3"
+              className="bg-blue-50 hover:bg-blue-600 text-white font-semibold px-4 py-1 rounded mt-3"
             >
               {RSVPbtntxt}
             </button>
