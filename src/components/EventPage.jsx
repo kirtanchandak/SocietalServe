@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
 import "../App.css";
 import { data } from "../utils/data";
+import { BiTimeFive } from "react-icons/bi";
 import { account } from "../utils/appwrite";
+import sendEmail from "../utils/sendmail";
 
 const EventPage = () => {
   const [ngoname, setNgoname] = useState("");
@@ -45,14 +47,11 @@ const EventPage = () => {
   };
   return (
     <>
-      <div className="p-10 h-screen back">
+      <div className="ml-4 py-4 border-b">
         <h1 className="text-3xl md:text-5xl font-[700]">{title}</h1>
-        <div className="flex gap-1 pt-4">
-          <img
-            src="https://secure.meetupstatic.com/next/images/design-system-icons/menu-network-event-outline.svg?w=48"
-            alt=""
-          />
-          <h1>Pragati NGO, Pune</h1>
+        <div className="flex gap-3 pt-4">
+          <img src={ngoLogo} alt="ngologo" className="w-10" />
+          <h1 className="mt-1">{ngo}, Pune</h1>
         </div>
       </div>
       <div className="container mx-auto px-4 py-8">
