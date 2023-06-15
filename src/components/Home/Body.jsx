@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import search from "../../assets/search.png";
 import signup from "../../assets/signup.png";
 import attend from "../../assets/attend.png";
-import Login from "../Login";
 
 function Hero() {
   return (
@@ -132,7 +131,12 @@ function Hero() {
               <Link to="/login">
                 <div class="flex flex-col items-center space-y-2 px-6 shadow-md">
                   <div class="mt-3 md:mt-0">
-                    <img className="rounded-lg" src={item.img} width="300px" />
+                    <img
+                      className="rounded-lg"
+                      src={item.img}
+                      alt="img"
+                      width="300px"
+                    />
                   </div>
                   <div className="flex flex-col justify-between w-full h-full p-3">
                     <div className="text-xl font-[700]">{item.title}</div>

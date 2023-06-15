@@ -6,10 +6,8 @@ import { account } from "../utils/appwrite";
 import sendEmail from "../utils/sendmail";
 
 const EventPage = () => {
-  const [ngoname, setNgoname] = useState("");
   const [img, setImg] = useState("");
   const [title, setTitle] = useState("");
-  const [des, setDes] = useState("");
   const [date, setDate] = useState("");
   const [ngo, setNgo] = useState("");
   const [ngoLogo, setNgoLogo] = useState("");
@@ -23,9 +21,7 @@ const EventPage = () => {
     const item = data.find((event) => event.id === targetId);
     if (item) {
       setDate(item.date);
-      setDes(item.des);
       setImg(item.img);
-      setNgoname(item.ngoname);
       setTitle(item.title);
       setNgo(item.ngo);
       setNgoLogo(item.ngologo);
@@ -57,7 +53,7 @@ const EventPage = () => {
       <div className="container mx-auto px-4 py-8">
         <div className="flex flex-col md:flex-row">
           <div className="md:w-3/4">
-            <img src={img} alt={title} className="mb-4 rounded-md w-full" />
+            <img src={img} alt="img" className="mb-4 rounded-md w-full" />
           </div>
           <div className="md:w-3/4 md:pl-8">
             <h2 className="lg:text-5xl font-[700] hidden">{title}</h2>
@@ -77,7 +73,10 @@ const EventPage = () => {
               <h1 className="text-xl font-semibold">Details:</h1>
               <p className="text-gray-600 mt-3 font-medium">{detailedDes}</p>
             </div>
-            <button className="bg-blue-500 hover:bg-blue-600 text-white font-semibold px-4 py-1 rounded mt-3">
+            <button
+              onClick={handleSendEmail}
+              className="bg-blue-500 hover:bg-blue-600 text-white font-semibold px-4 py-1 rounded mt-3"
+            >
               RSVP
             </button>
           </div>
