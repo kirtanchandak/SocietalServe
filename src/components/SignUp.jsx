@@ -38,7 +38,7 @@ function Login() {
         <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
           <a
             href="/"
-            class="flex items-center mb-6 text-4xl font-[700] text-gray-900 dark:text-white"
+            class="flex items-center mb-6 text-4xl font-[700] text-gray-900"
           >
             Societal Serve ☀️
           </a>
