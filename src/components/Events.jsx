@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { account } from "../utils/appwrite";
-
 import Login from "./Login";
 import { Link } from "react-router-dom";
 import { data } from "../utils/data";
@@ -55,7 +54,7 @@ function Events() {
                     <img
                       class="rounded-t-lg"
                       src={item.img}
-                      alt=""
+                      alt="eventimg"
                       width="100%"
                       height="100%"
                     />
