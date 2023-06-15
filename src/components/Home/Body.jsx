@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import search from "../../assets/search.png";
 import signup from "../../assets/signup.png";
 import attend from "../../assets/attend.png";
+import heroImg from "../../assets/World Humanitarian Day-pana.png";
 
 function Hero() {
   return (
@@ -29,16 +30,11 @@ function Hero() {
           </div>
         </div>
         <div className="flex lg:w-1/2 w-5/6">
-          <img
-            src="https://secure.meetupstatic.com/next/images/shared/online_events.svg?w=1080"
-            alt=""
-            srcset=""
-            className="w-full py-8"
-          />
+          <img src={heroImg} alt="" srcset="" className="w-full mt-10" />
         </div>
       </div>
-      <div className="py-20">
-        <div className="text-center py-4 sm:py-8 ">
+      <div className="py-10">
+        <div className="text-center py-4 sm:py-8">
           <h1 className="text-3xl font-[700]">How SocietalServe Works?</h1>
           <p class="text-center w-full sm:w-1/3 lg:w-1/2 mb-10 mx-auto">
             Meet new people who share your interests and contribute to the
