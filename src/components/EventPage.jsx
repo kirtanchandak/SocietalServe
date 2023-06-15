@@ -30,12 +30,20 @@ const EventPage = () => {
       setDetailedDes(item.detailedDes);
     }
   }, []);
+  const message = `
+  Event : ${title}
+
+  NGO : ${ngo}
+
+  Date : ${date}
+  
+  Details : ${detailedDes}`;
   const handleSendEmail = () => {
     account
       .get()
       .then((response) => {
         const receiverEmail = response.email;
-        // sendEmail(receiverEmail);
+        sendEmail(receiverEmail, message);
         setRSVPbtntxt("You've Succesfully RSVP'ed");
         setIsButtonDisabled(true);
         console.log("User email:", receiverEmail);
@@ -50,7 +58,7 @@ const EventPage = () => {
         <h1 className="text-3xl md:text-5xl font-[700]">{title}</h1>
         <div className="flex gap-3 pt-4">
           <img src={ngoLogo} alt="ngologo" className="w-10" />
-          <h1 className="mt-1">{ngo}, Pune</h1>
+          <h1 className="mt-1">{ngo}</h1>
         </div>
       </div>
       <div className="container mx-auto px-4 py-8">

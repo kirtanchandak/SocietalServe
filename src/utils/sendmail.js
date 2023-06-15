@@ -1,6 +1,6 @@
 import emailjs from "emailjs-com";
 
-const sendEmail = (receiverEmail) => {
+const sendEmail = (receiverEmail, message) => {
   const serviceID = "service_vaowg6c";
   const templateID = "template_goo9va9";
   const userID = "w3aBkitbTj4JscZSC";
@@ -9,6 +9,7 @@ const sendEmail = (receiverEmail) => {
   const emailParams = {
     to_email: receiverEmail,
     receiver_email: receiverEmail,
+    message: message,
   };
 
   // Send the email
