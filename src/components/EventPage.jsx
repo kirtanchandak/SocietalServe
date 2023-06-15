@@ -35,8 +35,9 @@ const EventPage = () => {
       .get()
       .then((response) => {
         const receiverEmail = response.email;
-        sendEmail(receiverEmail);
+        // sendEmail(receiverEmail);
         setRSVPbtntxt("You've Succesfully RSVP'ed");
+        setIsButtonDisabled(true);
         console.log("User email:", receiverEmail);
       })
       .catch((error) => {
@@ -77,7 +78,8 @@ const EventPage = () => {
             </div>
             <button
               onClick={handleSendEmail}
-              className="bg-blue-50 hover:bg-blue-600 text-white font-semibold px-4 py-1 rounded mt-3"
+              disabled={isButtonDisabled}
+              className="bg-blue-500 disabled:bg-slate-300 disabled:text-black hover:bg-blue-700 text-white font-semibold px-4 py-1 rounded mt-3"
             >
               {RSVPbtntxt}
             </button>
