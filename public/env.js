@@ -5,7 +5,7 @@ window.env = {
   "APPWRITE_PROJECT_ID": "647b27f3b82b79140fdc",
   "ChocolateyInstall": "C:\\ProgramData\\chocolatey",
   "ChocolateyLastPathUpdate": "133252676809941196",
-  "CHROME_CRASHPAD_PIPE_NAME": "\\\\.\\pipe\\LOCAL\\crashpad_14372_CBRMXCGRZHFUHQFK",
+  "CHROME_CRASHPAD_PIPE_NAME": "\\\\.\\pipe\\LOCAL\\crashpad_23744_IOOVVDZUFUDIKDTC",
   "COLOR": "1",
   "COLORTERM": "truecolor",
   "CommonProgramFiles": "C:\\Program Files\\Common Files",
@@ -89,6 +89,5 @@ window.env = {
   "VSCODE_GIT_IPC_HANDLE": "\\\\.\\pipe\\vscode-git-5f7c53a1a6-sock",
   "VSCODE_INJECTION": "1",
   "windir": "C:\\WINDOWS",
-  "ZES_ENABLE_SYSMAN": "1",
-  "__COMPAT_LAYER": "DetectorsAppHealth"
+  "ZES_ENABLE_SYSMAN": "1"
 };

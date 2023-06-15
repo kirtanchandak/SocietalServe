@@ -8,16 +8,13 @@ function Footer() {
           <div className="hidden sm:block font-semibold">
             Post your own NGO event.
             <a
-              href="https://www.societalserve.vercel.app/how-to-group-start/"
+              href="/"
               className="i157fg5d inline-flex ml-4 px-4 py-2 border-2 rounded-md hover:bg-white hover:text-[#1F2937] focus:bg-white focus:text-[#1F2937]"
             >
               Get Started
             </a>
           </div>
-          <a
-            href="https://www.societalserve.vercel.app/how-to-group-start/"
-            className="i157fg5d block sm:hidden"
-          >
+          <a href="/" className="i157fg5d block sm:hidden">
             Start a new group
           </a>
         </div>
@@ -27,7 +24,7 @@ function Footer() {
             <ul>
               <li className="my-1">
                 <a
-                  href="https://www.societalserve.vercel.app/register/"
+                  href="signup/"
                   className="ds-font-small hover:no-underline text-gray4 hover:text-white cursor-pointer"
                 >
                   Sign up
@@ -35,7 +32,7 @@ function Footer() {
               </li>
               <li className="my-1">
                 <a
-                  href="https://www.societalserve.vercel.app/login/"
+                  href="/login"
                   className="ds-font-small hover:no-underline text-gray4 hover:text-white cursor-pointer"
                 >
                   Log in
@@ -49,8 +46,8 @@ function Footer() {
             <h2 className="mb-3">Follow us</h2>
             <div className="flex flex-row space-x-8 mb-6">
               <a
-                href="https://twitter.com/SocietalServe/"
-                aria-label="Meetup on Twitter"
+                href="/"
+                aria-label="Societal-Serve on Twitter"
                 data-element-name="footer-twitterSocialLink"
                 data-event-label="Twitter follow us"
               >
@@ -66,7 +63,7 @@ function Footer() {
                       viewBox="0 0 24 24"
                       fill="none"
                       className="injected-svg text-gray3 fill-current"
-                      data-src="https://secure.meetupstatic.com/next/images/design-system-icons/social-twitter.svg"
+                      data-src="../../assets/icons/icons8-twitter.svg"
                       style={{
                         width: "30px",
                         height: "30px",
@@ -80,7 +77,7 @@ function Footer() {
                 </div>
               </a>
               <a
-                href="https://www.youtube.com/meetup"
+                href="/"
                 aria-label="Meetup on YouTube"
                 data-element-name="footer-youtubeSocialLink"
                 data-event-label="Youtube follow us"
@@ -116,26 +113,26 @@ function Footer() {
         <div className="ds-font-small flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6 text-gray4 pt-2">
           <span className="text-white">© 2023 SocietalServe</span>
           <a
-            href="https://help.meetup.com/hc/en-us/articles/360027447252"
+            href="/"
             data-event-label="Terms of Service"
             className="ds-font-small hover:no-underline text-gray4 hover:text-white cursor-pointer"
           >
             Terms of Service
           </a>
           <a
-            href="https://www.societalserve.vercel.app/privacy/"
+            href="/"
             className="ds-font-small hover:no-underline text-gray4 hover:text-white cursor-pointer"
           >
             Privacy Policy
           </a>
           <a
-            href="https://help.meetup.com/hc/en-us/articles/360046339551"
+            href="/"
             className="ds-font-small hover:no-underline text-gray4 hover:text-white cursor-pointer"
           >
             Cookie Policy
           </a>
           <a
-            href="https://www.societalserve.vercel.app/help/"
+            href="/"
             className="ds-font-small hover:no-underline text-gray4 hover:text-white cursor-pointer"
           >
             Help
