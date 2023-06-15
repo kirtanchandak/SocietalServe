@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "../App.css";
 import { data } from "../utils/data";
+import sendEmail from "../utils/sendmail";
+import { account } from "../utils/appwrite";
 
 const EventPage = () => {
   const [img, setImg] = useState("");
@@ -21,6 +23,21 @@ const EventPage = () => {
       setTitle(item.title);
     }
   }, []);
+
+  const handleSendEmail = () => {
+    account
+      .get()
+      .then((response) => {
+        const receiverEmail = response.email;
+
+        sendEmail(receiverEmail);
+        console.log("User email:", receiverEmail);
+      })
+      .catch((error) => {
+        console.error("Error retrieving user data:", error);
+      });
+  };
+
   return (
     <>
       <div className="p-10 h-screen back">
@@ -39,11 +56,14 @@ const EventPage = () => {
         <img
           src={img}
           className="rounded-md mt-4"
-          alt=""
+          alt="event img"
           height="100%"
           width="100%"
         />
-        <button className="bg-[#576CBC] btn rounded-md text-white mt-3">
+        <button
+          className="bg-[#576CBC] btn rounded-md text-white mt-3"
+          onClick={handleSendEmail}
+        >
           Join Now
         </button>
       </div>
