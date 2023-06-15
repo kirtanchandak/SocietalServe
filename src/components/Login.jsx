@@ -31,11 +31,11 @@ function Login() {
         <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
           <a
             href="/"
-            class="flex items-center mb-6 text-4xl font-[700] text-gray-900 dark:text-white"
+            class="flex items-center mb-6 text-4xl font-[700] text-gray-900"
           >
             Societal Serve ☀️
           </a>
-          <div class="w-full rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
+          <div class="w-full rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0">
             <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
               <h1 class="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
                 Sign in to your account
@@ -96,7 +96,7 @@ function Login() {
                   <h1 className="text-center mt-2">OR</h1>
 
                   <button
-                    className="w-full text-black text-sm btn text-center rounded-md inline-flex items-center justify-center py-5 mt-3 shadow-lg cursor-pointer"
+                    className="w-full text-sm btn text-center rounded-md inline-flex items-center justify-center py-5 mt-3 shadow-lg cursor-pointer"
                     onClick={(e) => googleAuth(e)}
                   >
                     Sign In with
