@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from "react";
 import "../App.css";
 import { data } from "../utils/data";
-import sendEmail from "../utils/sendmail";
 import { account } from "../utils/appwrite";
-import { BiTimeFive } from "react-icons/bi";
 
 const EventPage = () => {
+  const [ngoname, setNgoname] = useState("");
   const [img, setImg] = useState("");
   const [title, setTitle] = useState("");
   const [des, setDes] = useState("");
@@ -24,13 +23,13 @@ const EventPage = () => {
       setDate(item.date);
       setDes(item.des);
       setImg(item.img);
+      setNgoname(item.ngoname);
       setTitle(item.title);
       setNgo(item.ngo);
       setNgoLogo(item.ngologo);
       setDetailedDes(item.detailedDes);
     }
   }, []);
-
   const handleSendEmail = () => {
     account
       .get()
@@ -44,19 +43,16 @@ const EventPage = () => {
         console.error("Error retrieving user data:", error);
       });
   };
-
   return (
     <>
-      <div className="w-full border-b py-2 lg:py-6">
-        <h1 className="text-4xl font-[700] ml-8">{title}</h1>
-        <div className="flex flex-row mt-4">
-          <div>
-            <img src={ngoLogo} className="w-10 ml-6 mt-2" alt="" />
-          </div>
-          <div className="ml-4">
-            <h1>Hosted by:</h1>
-            <span className="font-medium">{ngo}</span>
-          </div>
+      <div className="p-10 h-screen back">
+        <h1 className="text-3xl md:text-5xl font-[700]">{title}</h1>
+        <div className="flex gap-1 pt-4">
+          <img
+            src="https://secure.meetupstatic.com/next/images/design-system-icons/menu-network-event-outline.svg?w=48"
+            alt=""
+          />
+          <h1>Pragati NGO, Pune</h1>
         </div>
       </div>
       <div className="container mx-auto px-4 py-8">

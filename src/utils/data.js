@@ -1,6 +1,7 @@
 export const data = [
   {
     id: 1,
+    ngoname: "Nakshtra NGO, Mumbai",
     img: "https://earth5r.org/wp-content/uploads/2020/07/Clean-Up-Drive-Gandhinagar-Mumbai-India-Environmental-NGO-Earth5R.jpg",
     title: "Garbage collection Drive 🗑️",
     ngo: "Earth5R",
@@ -13,6 +14,7 @@ export const data = [
   },
   {
     id: 2,
+    ngoname: "Pragati NGO, Pune",
     img: "https://www.bookeventz.com/blog/wp-content/uploads/2021/02/FI-1.jpg",
     title: "Food Distribution Drive 🍽️",
     ngo: "Food for All",
@@ -24,6 +26,7 @@ export const data = [
   },
   {
     id: 3,
+    ngoname: "Spandan NGO, Dehradun",
     img: "https://pahal.ngo/wp-content/uploads/2017/08/6.jpg",
     title: "Blood Donation Camp 🩸",
     ngo: "Life Savers",
@@ -35,6 +38,7 @@ export const data = [
   },
   {
     id: 4,
+    ngoname: "Sankirna NGO, Kolkata",
     img: "https://ratnanidhi.org/userfile/image/Webp%20images/001F.webp",
     title: "Clothes Distribution Drive 👚",
     ngo: "Ratnanidhi Charitable Trust",
