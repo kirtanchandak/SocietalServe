@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { account } from "../utils/appwrite";
-import sendEmail from "../utils/sendmail";
+
 import Login from "./Login";
 import { Link } from "react-router-dom";
 import { data } from "../utils/data";
@@ -32,20 +32,6 @@ function Events() {
     }
   };
 
-  const handleSendEmail = () => {
-    account
-      .get()
-      .then((response) => {
-        const receiverEmail = response.email;
-
-        sendEmail(receiverEmail);
-        console.log("User email:", receiverEmail);
-      })
-      .catch((error) => {
-        console.error("Error retrieving user data:", error);
-      });
-  };
-
   return (
     <>
       {user ? (
@@ -69,6 +55,7 @@ function Events() {
                     <img
                       class="rounded-t-lg"
                       src={item.img}
+                      alt=""
                       width="100%"
                       height="100%"
                     />
@@ -84,10 +71,7 @@ function Events() {
                       {item.des}
                     </p>
                     <Link to={`/event/${item.id}`}>
-                      <button
-                        class="bg-[#576CBC] rounded-lg btn mt-2 text-white"
-                        onClick={handleSendEmail}
-                      >
+                      <button class="bg-[#576CBC] rounded-lg btn mt-2 text-white">
                         Join Now
                       </button>
                     </Link>

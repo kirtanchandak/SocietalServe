@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from "react";
 import "../App.css";
 import { data } from "../utils/data";
+import { account } from "../utils/appwrite";
+import sendEmail from "../utils/sendmail";
 
 const EventPage = () => {
+  const [ngoname, setNgoname] = useState("");
   const [img, setImg] = useState("");
   const [title, setTitle] = useState("");
   const [des, setDes] = useState("");
@@ -18,9 +21,23 @@ const EventPage = () => {
       setDate(item.date);
       setDes(item.des);
       setImg(item.img);
+      setNgoname(item.ngoname);
       setTitle(item.title);
     }
   }, []);
+  const handleSendEmail = () => {
+    account
+      .get()
+      .then((response) => {
+        const receiverEmail = response.email;
+
+        sendEmail(receiverEmail);
+        console.log("User email:", receiverEmail);
+      })
+      .catch((error) => {
+        console.error("Error retrieving user data:", error);
+      });
+  };
   return (
     <>
       <div className="p-10 h-screen back">
@@ -30,7 +47,7 @@ const EventPage = () => {
             src="https://secure.meetupstatic.com/next/images/design-system-icons/menu-network-event-outline.svg?w=48"
             alt=""
           />
-          <h1>Pragati NGO, Pune</h1>
+          <h1>{ngoname}</h1>
         </div>
         <div className="pt-4">
           <p className="font-[500]">{des}</p>
@@ -43,7 +60,10 @@ const EventPage = () => {
           height="100%"
           width="100%"
         />
-        <button className="bg-[#576CBC] btn rounded-md text-white mt-3">
+        <button
+          className="bg-[#576CBC] btn rounded-md text-white mt-3"
+          onClick={handleSendEmail}
+        >
           Join Now
         </button>
       </div>
