@@ -9,7 +9,7 @@ function Footer() {
             Post your own NGO event.
             <a
               href="https://www.societalserve.vercel.app/how-to-group-start/"
-              className="i157fg5d inline-flex ml-4 px-4 py-2 border-2 rounded-md hover:bg-white hover:text-gray7 focus:bg-white focus:text-gray7"
+              className="i157fg5d inline-flex ml-4 px-4 py-2 border-2 rounded-md hover:bg-white hover:text-[#1F2937] focus:bg-white focus:text-[#1F2937]"
             >
               Get Started
             </a>
